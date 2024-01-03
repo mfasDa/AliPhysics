@@ -20,6 +20,8 @@ add_subdirectory(GammaConvBase)
 add_subdirectory(Hyperon)
 add_subdirectory(PHOSTasks)
 add_subdirectory(PWGGAUtils)
+if(NOT ${CMAKE_SYSTEM} MATCHES Darwin)
 add_subdirectory(NtuplizerTask)
+endif(NOT ${CMAKE_SYSTEM} MATCHES Darwin)
 
 message(STATUS "PWGGA enabled")
